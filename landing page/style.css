@@ -1,0 +1,169 @@
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(Food-Websites-Image.webp);
+    background-size:cover;
+}
+nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:sans-serif;
+    color: white;
+   
+}
+.logo{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: rgb(167, 126, 126);
+    display: flex;
+}
+.logob{
+    color: white;
+}
+.cookimg{
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 10px;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(211, 209, 201);
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: black;
+    border-radius: 5px;
+    transition: 0.4s;
+    
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid rgb(211, 209, 201);
+    
+}
+
+.h-t{
+    max-width: 650px ;
+    position: absolute;
+    top: 50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    text-align:justify;
+    color: white;
+}
+.h-t h1{
+    letter-spacing: 2px;
+    font-size: 4em;
+}
+.h-t h2{
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+.h-t p{
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+.h-t a{
+    background:black;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+}
+.h-t a:hover{
+    background: transparent;
+    border: 1px solid rgb(211, 209, 201);
+}
+.footer{
+    background: #24262b; 
+    padding: 70px 0;
+}
+.f-c{
+    max-width: 1170px;
+    margin: auto;
+    
+}
+.f-row{
+    display: flex;
+   
+}
+ul{
+    list-style: none;
+}
+.f-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.f-col h4{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+   
+}
+.f-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.f-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.f-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.f-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.icon a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
